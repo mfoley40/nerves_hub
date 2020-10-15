@@ -4,6 +4,8 @@ defmodule Nerves.Hub.Test do
 
   alias Nerves.Hub
 
+  require Logger
+
   Hub.start
 
   test "hub is running and sorta works" do
