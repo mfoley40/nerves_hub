@@ -25,7 +25,7 @@ defmodule Nerves.Hub.Mixfile do
   defp deps, do: [
     {:nerves_lib, github: "mfoley40/nerves_lib"},
     {:earmark, "~> 1.4.10"},  # was 0.1.19, only: :dev
-    {:ex_doc, "~> 0.10", only: :dev}
+    {:ex_doc, "~> 0.23.0", only: :dev} # was 0.10
   ]
 
  end
