@@ -68,7 +68,7 @@ defmodule Nerves.Hub.OrdDictTree do
   ## REVIEW: could eventually be implemented as a special form of update by
   ## passing something like {append, Subscription, [notifications, false]}
   ## as the value, or maybe something like a function as the value!!! cool?
-  def watch(point \\ [], opts \\ {}, tree \\ :ordict.new)
+  def watch(point \\ [], opts \\ {}, tree \\ :orddict.new)
 
   def watch([], {from, opts}, tree) do
     {from_pid, _ref} = from

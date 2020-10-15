@@ -271,7 +271,7 @@ defmodule Nerves.Hub do
   #DEPRECATED - 04/2016
   def get(path, key) do
     {_vers, dict} = fetch(path)
-    Dict.get dict, key
+    Keyword.get dict, key
   end
 
   @doc """

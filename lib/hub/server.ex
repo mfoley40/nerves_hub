@@ -106,7 +106,7 @@ defmodule Nerves.Hub.Server do
     case Tree.update(path, proposed, state.dtree, ctx) do
       {[], _} ->
         {:noreply, state}
-      {changed, new_tree} ->
+      {_changed, new_tree} ->
         state = %State{state | dtree: new_tree, gtseq: seq}
         {:noreply, state}
     end

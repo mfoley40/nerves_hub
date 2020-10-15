@@ -1,6 +1,6 @@
 defmodule Nerves.Hub.Mixfile do
 
-  @version "0.10.1"
+  @version "1.0.0"
 
   use Mix.Project
 
@@ -8,8 +8,8 @@ defmodule Nerves.Hub.Mixfile do
     [app: :nerves_hub,
      description: "Heirarchical key-value state store with pub-sub semantics",
      version: @version,
-     elixir: "~> 1.0",
-     deps: deps,
+     elixir: "~> 1.10",
+     deps: deps(),
      # ExDoc
      name: "Hub",
      docs: [main: Nerves.Hub,
@@ -23,8 +23,8 @@ defmodule Nerves.Hub.Mixfile do
   end
 
   defp deps, do: [
-    {:nerves_lib, github: "nerves-project/nerves_lib"},
-    {:earmark, "~> 0.1.19", only: :dev},
+    {:nerves_lib, github: "mfoley40/nerves_lib"},
+    {:earmark, "~> 1.4.10"},  # was 0.1.19, only: :dev
     {:ex_doc, "~> 0.10", only: :dev}
   ]
 
