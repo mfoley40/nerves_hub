@@ -8,7 +8,7 @@ defmodule Nerves.Hub.Mixfile do
     [app: :nerves_hub,
      description: "Heirarchical key-value state store with pub-sub semantics",
      version: @version,
-     elixir: "~> 1.10",
+     elixir: "~> 1.11",
      deps: deps(),
      # ExDoc
      name: "Hub",
